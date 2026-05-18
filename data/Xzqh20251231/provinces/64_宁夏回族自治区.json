@@ -1,0 +1,202 @@
+{
+  "code": "64",
+  "name": "宁夏回族自治区",
+  "level": 1,
+  "type": "自治区",
+  "children": [
+    {
+      "code": "6401",
+      "name": "银川市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "640104",
+          "name": "兴庆区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640105",
+          "name": "西夏区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640106",
+          "name": "金凤区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640121",
+          "name": "永宁县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640122",
+          "name": "贺兰县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640181",
+          "name": "灵武市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "6402",
+      "name": "石嘴山市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "640202",
+          "name": "大武口区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640205",
+          "name": "惠农区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640221",
+          "name": "平罗县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "6403",
+      "name": "吴忠市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "640302",
+          "name": "利通区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640303",
+          "name": "红寺堡区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640323",
+          "name": "盐池县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640324",
+          "name": "同心县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640381",
+          "name": "青铜峡市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "6404",
+      "name": "固原市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "640402",
+          "name": "原州区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640422",
+          "name": "西吉县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640423",
+          "name": "隆德县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640424",
+          "name": "泾源县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640425",
+          "name": "彭阳县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "6405",
+      "name": "中卫市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "640502",
+          "name": "沙坡头区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "640521",
+          "name": "中宁县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "640522",
+          "name": "海原县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

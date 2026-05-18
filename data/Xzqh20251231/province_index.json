@@ -1,0 +1,206 @@
+[
+  {
+    "code": "11",
+    "name": "北京市",
+    "file": "provinces/11_北京市.json",
+    "rows": 360
+  },
+  {
+    "code": "12",
+    "name": "天津市",
+    "file": "provinces/12_天津市.json",
+    "rows": 269
+  },
+  {
+    "code": "13",
+    "name": "河北省",
+    "file": "provinces/13_河北省.json",
+    "rows": 179
+  },
+  {
+    "code": "14",
+    "name": "山西省",
+    "file": "provinces/14_山西省.json",
+    "rows": 129
+  },
+  {
+    "code": "15",
+    "name": "内蒙古自治区",
+    "file": "provinces/15_内蒙古自治区.json",
+    "rows": 116
+  },
+  {
+    "code": "21",
+    "name": "辽宁省",
+    "file": "provinces/21_辽宁省.json",
+    "rows": 115
+  },
+  {
+    "code": "22",
+    "name": "吉林省",
+    "file": "provinces/22_吉林省.json",
+    "rows": 70
+  },
+  {
+    "code": "23",
+    "name": "黑龙江省",
+    "file": "provinces/23_黑龙江省.json",
+    "rows": 135
+  },
+  {
+    "code": "31",
+    "name": "上海市",
+    "file": "provinces/31_上海市.json",
+    "rows": 233
+  },
+  {
+    "code": "32",
+    "name": "江苏省",
+    "file": "provinces/32_江苏省.json",
+    "rows": 109
+  },
+  {
+    "code": "33",
+    "name": "浙江省",
+    "file": "provinces/33_浙江省.json",
+    "rows": 102
+  },
+  {
+    "code": "34",
+    "name": "安徽省",
+    "file": "provinces/34_安徽省.json",
+    "rows": 121
+  },
+  {
+    "code": "35",
+    "name": "福建省",
+    "file": "provinces/35_福建省.json",
+    "rows": 94
+  },
+  {
+    "code": "36",
+    "name": "江西省",
+    "file": "provinces/36_江西省.json",
+    "rows": 112
+  },
+  {
+    "code": "37",
+    "name": "山东省",
+    "file": "provinces/37_山东省.json",
+    "rows": 153
+  },
+  {
+    "code": "41",
+    "name": "河南省",
+    "file": "provinces/41_河南省.json",
+    "rows": 175
+  },
+  {
+    "code": "42",
+    "name": "湖北省",
+    "file": "provinces/42_湖北省.json",
+    "rows": 117
+  },
+  {
+    "code": "43",
+    "name": "湖南省",
+    "file": "provinces/43_湖南省.json",
+    "rows": 137
+  },
+  {
+    "code": "44",
+    "name": "广东省",
+    "file": "provinces/44_广东省.json",
+    "rows": 144
+  },
+  {
+    "code": "45",
+    "name": "广西壮族自治区",
+    "file": "provinces/45_广西壮族自治区.json",
+    "rows": 126
+  },
+  {
+    "code": "46",
+    "name": "海南省",
+    "file": "provinces/46_海南省.json",
+    "rows": 30
+  },
+  {
+    "code": "50",
+    "name": "重庆市",
+    "file": "provinces/50_重庆市.json",
+    "rows": 1072
+  },
+  {
+    "code": "51",
+    "name": "四川省",
+    "file": "provinces/51_四川省.json",
+    "rows": 205
+  },
+  {
+    "code": "52",
+    "name": "贵州省",
+    "file": "provinces/52_贵州省.json",
+    "rows": 98
+  },
+  {
+    "code": "53",
+    "name": "云南省",
+    "file": "provinces/53_云南省.json",
+    "rows": 146
+  },
+  {
+    "code": "54",
+    "name": "西藏自治区",
+    "file": "provinces/54_西藏自治区.json",
+    "rows": 82
+  },
+  {
+    "code": "61",
+    "name": "陕西省",
+    "file": "provinces/61_陕西省.json",
+    "rows": 118
+  },
+  {
+    "code": "62",
+    "name": "甘肃省",
+    "file": "provinces/62_甘肃省.json",
+    "rows": 101
+  },
+  {
+    "code": "63",
+    "name": "青海省",
+    "file": "provinces/63_青海省.json",
+    "rows": 53
+  },
+  {
+    "code": "64",
+    "name": "宁夏回族自治区",
+    "file": "provinces/64_宁夏回族自治区.json",
+    "rows": 28
+  },
+  {
+    "code": "65",
+    "name": "新疆维吾尔自治区",
+    "file": "provinces/65_新疆维吾尔自治区.json",
+    "rows": 125
+  },
+  {
+    "code": "81",
+    "name": "香港特别行政区",
+    "file": "provinces/81_香港特别行政区.json",
+    "rows": 1
+  },
+  {
+    "code": "82",
+    "name": "澳门特别行政区",
+    "file": "provinces/82_澳门特别行政区.json",
+    "rows": 1
+  },
+  {
+    "code": "资料暂缺",
+    "name": "台湾省",
+    "file": "provinces/资料暂缺_台湾省.json",
+    "rows": 1
+  }
+]

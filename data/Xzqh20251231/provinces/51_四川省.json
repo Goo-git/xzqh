@@ -1,0 +1,1457 @@
+{
+  "code": "51",
+  "name": "四川省",
+  "level": 1,
+  "type": "省",
+  "children": [
+    {
+      "code": "5101",
+      "name": "成都市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510104",
+          "name": "锦江区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510105",
+          "name": "青羊区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510106",
+          "name": "金牛区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510107",
+          "name": "武侯区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510108",
+          "name": "成华区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510112",
+          "name": "龙泉驿区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510113",
+          "name": "青白江区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510114",
+          "name": "新都区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510115",
+          "name": "温江区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510116",
+          "name": "双流区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510117",
+          "name": "郫都区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510118",
+          "name": "新津区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510121",
+          "name": "金堂县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510129",
+          "name": "大邑县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510131",
+          "name": "蒲江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510181",
+          "name": "都江堰市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "510182",
+          "name": "彭州市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "510183",
+          "name": "邛崃市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "510184",
+          "name": "崇州市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "510185",
+          "name": "简阳市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5103",
+      "name": "自贡市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510302",
+          "name": "自流井区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510303",
+          "name": "贡井区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510304",
+          "name": "大安区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510311",
+          "name": "沿滩区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510321",
+          "name": "荣县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510322",
+          "name": "富顺县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5104",
+      "name": "攀枝花市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510402",
+          "name": "东区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510403",
+          "name": "西区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510411",
+          "name": "仁和区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510421",
+          "name": "米易县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510422",
+          "name": "盐边县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5105",
+      "name": "泸州市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510502",
+          "name": "江阳区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510503",
+          "name": "纳溪区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510504",
+          "name": "龙马潭区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510521",
+          "name": "泸县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510522",
+          "name": "合江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510524",
+          "name": "叙永县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510525",
+          "name": "古蔺县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5106",
+      "name": "德阳市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510603",
+          "name": "旌阳区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510604",
+          "name": "罗江区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510623",
+          "name": "中江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510681",
+          "name": "广汉市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "510682",
+          "name": "什邡市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "510683",
+          "name": "绵竹市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5107",
+      "name": "绵阳市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510703",
+          "name": "涪城区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510704",
+          "name": "游仙区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510705",
+          "name": "安州区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510722",
+          "name": "三台县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510723",
+          "name": "盐亭县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510725",
+          "name": "梓潼县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510726",
+          "name": "北川羌族自治县",
+          "level": 3,
+          "type": "自治县",
+          "children": []
+        },
+        {
+          "code": "510727",
+          "name": "平武县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510781",
+          "name": "江油市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5108",
+      "name": "广元市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510802",
+          "name": "利州区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510811",
+          "name": "昭化区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510812",
+          "name": "朝天区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510821",
+          "name": "旺苍县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510822",
+          "name": "青川县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510823",
+          "name": "剑阁县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510824",
+          "name": "苍溪县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5109",
+      "name": "遂宁市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "510903",
+          "name": "船山区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510904",
+          "name": "安居区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "510921",
+          "name": "蓬溪县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510923",
+          "name": "大英县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "510981",
+          "name": "射洪市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5110",
+      "name": "内江市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511002",
+          "name": "市中区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511011",
+          "name": "东兴区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511024",
+          "name": "威远县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511025",
+          "name": "资中县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511083",
+          "name": "隆昌市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5111",
+      "name": "乐山市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511102",
+          "name": "市中区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511111",
+          "name": "沙湾区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511112",
+          "name": "五通桥区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511113",
+          "name": "金口河区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511123",
+          "name": "犍为县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511124",
+          "name": "井研县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511126",
+          "name": "夹江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511129",
+          "name": "沐川县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511132",
+          "name": "峨边彝族自治县",
+          "level": 3,
+          "type": "自治县",
+          "children": []
+        },
+        {
+          "code": "511133",
+          "name": "马边彝族自治县",
+          "level": 3,
+          "type": "自治县",
+          "children": []
+        },
+        {
+          "code": "511181",
+          "name": "峨眉山市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5113",
+      "name": "南充市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511302",
+          "name": "顺庆区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511303",
+          "name": "高坪区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511304",
+          "name": "嘉陵区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511321",
+          "name": "南部县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511322",
+          "name": "营山县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511323",
+          "name": "蓬安县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511324",
+          "name": "仪陇县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511325",
+          "name": "西充县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511381",
+          "name": "阆中市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5114",
+      "name": "眉山市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511402",
+          "name": "东坡区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511403",
+          "name": "彭山区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511421",
+          "name": "仁寿县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511423",
+          "name": "洪雅县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511424",
+          "name": "丹棱县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511425",
+          "name": "青神县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5115",
+      "name": "宜宾市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511502",
+          "name": "翠屏区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511503",
+          "name": "南溪区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511504",
+          "name": "叙州区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511523",
+          "name": "江安县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511524",
+          "name": "长宁县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511525",
+          "name": "高县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511526",
+          "name": "珙县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511527",
+          "name": "筠连县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511528",
+          "name": "兴文县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511529",
+          "name": "屏山县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5116",
+      "name": "广安市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511602",
+          "name": "广安区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511603",
+          "name": "前锋区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511621",
+          "name": "岳池县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511622",
+          "name": "武胜县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511623",
+          "name": "邻水县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511681",
+          "name": "华蓥市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5117",
+      "name": "达州市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511702",
+          "name": "通川区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511703",
+          "name": "达川区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511722",
+          "name": "宣汉县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511723",
+          "name": "开江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511724",
+          "name": "大竹县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511725",
+          "name": "渠县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511781",
+          "name": "万源市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5118",
+      "name": "雅安市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511802",
+          "name": "雨城区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511803",
+          "name": "名山区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511822",
+          "name": "荥经县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511823",
+          "name": "汉源县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511824",
+          "name": "石棉县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511825",
+          "name": "天全县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511826",
+          "name": "芦山县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511827",
+          "name": "宝兴县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5119",
+      "name": "巴中市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "511902",
+          "name": "巴州区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511903",
+          "name": "恩阳区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "511921",
+          "name": "通江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511922",
+          "name": "南江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "511923",
+          "name": "平昌县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5120",
+      "name": "资阳市",
+      "level": 2,
+      "type": "地级市",
+      "children": [
+        {
+          "code": "512002",
+          "name": "雁江区",
+          "level": 3,
+          "type": "市辖区",
+          "children": []
+        },
+        {
+          "code": "512021",
+          "name": "安岳县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "512022",
+          "name": "乐至县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5132",
+      "name": "阿坝藏族羌族自治州",
+      "level": 2,
+      "type": "自治州",
+      "children": [
+        {
+          "code": "513201",
+          "name": "马尔康市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "513221",
+          "name": "汶川县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513222",
+          "name": "理县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513223",
+          "name": "茂县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513224",
+          "name": "松潘县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513225",
+          "name": "九寨沟县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513226",
+          "name": "金川县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513227",
+          "name": "小金县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513228",
+          "name": "黑水县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513230",
+          "name": "壤塘县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513231",
+          "name": "阿坝县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513232",
+          "name": "若尔盖县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513233",
+          "name": "红原县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5133",
+      "name": "甘孜藏族自治州",
+      "level": 2,
+      "type": "自治州",
+      "children": [
+        {
+          "code": "513301",
+          "name": "康定市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "513322",
+          "name": "泸定县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513323",
+          "name": "丹巴县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513324",
+          "name": "九龙县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513325",
+          "name": "雅江县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513326",
+          "name": "道孚县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513327",
+          "name": "炉霍县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513328",
+          "name": "甘孜县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513329",
+          "name": "新龙县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513330",
+          "name": "德格县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513331",
+          "name": "白玉县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513332",
+          "name": "石渠县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513333",
+          "name": "色达县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513334",
+          "name": "理塘县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513335",
+          "name": "巴塘县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513336",
+          "name": "乡城县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513337",
+          "name": "稻城县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513338",
+          "name": "得荣县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "5134",
+      "name": "凉山彝族自治州",
+      "level": 2,
+      "type": "自治州",
+      "children": [
+        {
+          "code": "513401",
+          "name": "西昌市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "513402",
+          "name": "会理市",
+          "level": 3,
+          "type": "县级市",
+          "children": []
+        },
+        {
+          "code": "513422",
+          "name": "木里藏族自治县",
+          "level": 3,
+          "type": "自治县",
+          "children": []
+        },
+        {
+          "code": "513423",
+          "name": "盐源县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513424",
+          "name": "德昌县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513426",
+          "name": "会东县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513427",
+          "name": "宁南县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513428",
+          "name": "普格县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513429",
+          "name": "布拖县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513430",
+          "name": "金阳县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513431",
+          "name": "昭觉县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513432",
+          "name": "喜德县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513433",
+          "name": "冕宁县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513434",
+          "name": "越西县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513435",
+          "name": "甘洛县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513436",
+          "name": "美姑县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        },
+        {
+          "code": "513437",
+          "name": "雷波县",
+          "level": 3,
+          "type": "县",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
