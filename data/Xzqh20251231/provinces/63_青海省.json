@@ -15,49 +15,588 @@
           "name": "城东区",
           "level": 3,
           "type": "市辖区",
-          "children": []
+          "children": [
+            {
+              "code": "630102001",
+              "name": "东关大街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630102002",
+              "name": "清真巷街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630102003",
+              "name": "大众街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630102004",
+              "name": "周家泉街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630102005",
+              "name": "火车站街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630102006",
+              "name": "八一路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630102007",
+              "name": "林家崖街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630102100",
+              "name": "乐家湾镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630102101",
+              "name": "韵家口镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630103",
           "name": "城中区",
           "level": 3,
           "type": "市辖区",
-          "children": []
+          "children": [
+            {
+              "code": "630103001",
+              "name": "人民街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630103002",
+              "name": "南滩街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630103003",
+              "name": "仓门街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630103004",
+              "name": "礼让街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630103005",
+              "name": "饮马街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630103006",
+              "name": "南川东路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630103007",
+              "name": "南川西路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630103100",
+              "name": "总寨镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630104",
           "name": "城西区",
           "level": 3,
           "type": "市辖区",
-          "children": []
+          "children": [
+            {
+              "code": "630104001",
+              "name": "西关大街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630104002",
+              "name": "古城台街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630104003",
+              "name": "虎台街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630104004",
+              "name": "胜利路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630104005",
+              "name": "兴海路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630104006",
+              "name": "文汇路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630104007",
+              "name": "通海路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630104100",
+              "name": "彭家寨镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630105",
           "name": "城北区",
           "level": 3,
           "type": "市辖区",
-          "children": []
+          "children": [
+            {
+              "code": "630105001",
+              "name": "朝阳街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630105002",
+              "name": "小桥大街街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630105003",
+              "name": "马坊街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630105004",
+              "name": "火车西站街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630105100",
+              "name": "大堡子镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630105101",
+              "name": "二十里铺镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630106",
           "name": "湟中区",
           "level": 3,
           "type": "市辖区",
-          "children": []
+          "children": [
+            {
+              "code": "630106001",
+              "name": "康川街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630106100",
+              "name": "田家寨镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106101",
+              "name": "上新庄镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106102",
+              "name": "鲁沙尔镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106103",
+              "name": "甘河滩镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106104",
+              "name": "共和镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106105",
+              "name": "多巴镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106106",
+              "name": "拦隆口镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106107",
+              "name": "上五庄镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106108",
+              "name": "李家山镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106109",
+              "name": "西堡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630106200",
+              "name": "群加藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630106201",
+              "name": "土门关乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630106202",
+              "name": "汉东回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630106203",
+              "name": "大才回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630106204",
+              "name": "海子沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630121",
           "name": "大通回族土族自治县",
           "level": 3,
           "type": "自治县",
-          "children": []
+          "children": [
+            {
+              "code": "630121100",
+              "name": "桥头镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121101",
+              "name": "城关镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121102",
+              "name": "塔尔镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121103",
+              "name": "东峡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121104",
+              "name": "黄家寨镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121105",
+              "name": "长宁镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121106",
+              "name": "景阳镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121107",
+              "name": "多林镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121108",
+              "name": "新庄镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630121200",
+              "name": "青林乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121201",
+              "name": "青山乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121202",
+              "name": "逊让乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121203",
+              "name": "极乐乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121205",
+              "name": "宝库乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121206",
+              "name": "斜沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121207",
+              "name": "良教乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121208",
+              "name": "向化藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630121209",
+              "name": "桦林乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630121210",
+              "name": "朔北藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630121212",
+              "name": "石山乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630123",
           "name": "湟源县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "630123100",
+              "name": "城关镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630123101",
+              "name": "大华镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630123201",
+              "name": "东峡乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630123202",
+              "name": "日月藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630123203",
+              "name": "和平乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630123204",
+              "name": "波航乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630123205",
+              "name": "申中乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630123207",
+              "name": "巴燕乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630123208",
+              "name": "寺寨乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -72,42 +611,720 @@
           "name": "乐都区",
           "level": 3,
           "type": "市辖区",
-          "children": []
+          "children": [
+            {
+              "code": "630202001",
+              "name": "碾伯街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630202002",
+              "name": "岗沟街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630202100",
+              "name": "碾伯镇（撤销）",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630202101",
+              "name": "高庙镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630202102",
+              "name": "瞿昙镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630202103",
+              "name": "洪水镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630202104",
+              "name": "雨润镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630202105",
+              "name": "高店镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630202106",
+              "name": "寿乐镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630202200",
+              "name": "下营藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630202201",
+              "name": "城台乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202202",
+              "name": "峰堆乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202203",
+              "name": "达拉土族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630202204",
+              "name": "共和乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202205",
+              "name": "中岭乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202206",
+              "name": "李家乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202207",
+              "name": "芦花乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202208",
+              "name": "马营乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202209",
+              "name": "马厂乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630202210",
+              "name": "中坝藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630202211",
+              "name": "蒲台乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630203",
           "name": "平安区",
           "level": 3,
           "type": "市辖区",
-          "children": []
+          "children": [
+            {
+              "code": "630203001",
+              "name": "平安街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630203002",
+              "name": "小峡街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630203102",
+              "name": "三合镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630203200",
+              "name": "洪水泉回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630203201",
+              "name": "石灰窑回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630203202",
+              "name": "古城回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630203203",
+              "name": "沙沟回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630203204",
+              "name": "巴藏沟回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630222",
           "name": "民和回族土族自治县",
           "level": 3,
           "type": "自治县",
-          "children": []
+          "children": [
+            {
+              "code": "630222100",
+              "name": "川口镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222101",
+              "name": "古鄯镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222102",
+              "name": "马营镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222103",
+              "name": "官亭镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222104",
+              "name": "巴州镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222105",
+              "name": "满坪镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222106",
+              "name": "李二堡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222107",
+              "name": "峡门镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630222200",
+              "name": "马场垣乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222201",
+              "name": "北山乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222202",
+              "name": "西沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222203",
+              "name": "总堡乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222204",
+              "name": "隆治乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222205",
+              "name": "大庄乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222206",
+              "name": "转导乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222207",
+              "name": "前河乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222208",
+              "name": "甘沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222209",
+              "name": "中川乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222210",
+              "name": "杏儿藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630222211",
+              "name": "核桃庄乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222212",
+              "name": "新民乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630222213",
+              "name": "松树乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630223",
           "name": "互助土族自治县",
           "level": 3,
           "type": "自治县",
-          "children": []
+          "children": [
+            {
+              "code": "630223001",
+              "name": "高寨街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "630223100",
+              "name": "威远镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630223101",
+              "name": "丹麻镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630223103",
+              "name": "南门峡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630223104",
+              "name": "加定镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630223105",
+              "name": "塘川镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630223106",
+              "name": "五十镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630223107",
+              "name": "五峰镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630223200",
+              "name": "红崖子沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223201",
+              "name": "哈拉直沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223202",
+              "name": "松多藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630223203",
+              "name": "东山乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223204",
+              "name": "东和乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223205",
+              "name": "东沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223206",
+              "name": "林川乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223207",
+              "name": "台子乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223208",
+              "name": "西山乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223209",
+              "name": "蔡家堡乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630223210",
+              "name": "巴扎藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630224",
           "name": "化隆回族自治县",
           "level": 3,
           "type": "自治县",
-          "children": []
+          "children": [
+            {
+              "code": "630224100",
+              "name": "巴燕镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630224101",
+              "name": "群科镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630224102",
+              "name": "牙什尕镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630224103",
+              "name": "甘都镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630224104",
+              "name": "扎巴镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630224105",
+              "name": "昂思多镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630224200",
+              "name": "雄先藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630224201",
+              "name": "查甫藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630224202",
+              "name": "二塘乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630224203",
+              "name": "谢家滩乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630224204",
+              "name": "德恒隆乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630224205",
+              "name": "沙连堡乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630224206",
+              "name": "阿什努乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630224207",
+              "name": "石大仓乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630224208",
+              "name": "初麻乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630224209",
+              "name": "金源藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630224210",
+              "name": "塔加藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "630225",
           "name": "循化撒拉族自治县",
           "level": 3,
           "type": "自治县",
-          "children": []
+          "children": [
+            {
+              "code": "630225100",
+              "name": "积石镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630225101",
+              "name": "白庄镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630225102",
+              "name": "街子镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "630225200",
+              "name": "道帏藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630225201",
+              "name": "清水乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630225202",
+              "name": "查汗都斯乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "630225203",
+              "name": "文都藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630225204",
+              "name": "尕楞藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "630225205",
+              "name": "岗察藏族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -122,28 +1339,242 @@
           "name": "门源回族自治县",
           "level": 3,
           "type": "自治县",
-          "children": []
+          "children": [
+            {
+              "code": "632221100",
+              "name": "浩门镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632221101",
+              "name": "青石嘴镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632221102",
+              "name": "泉口镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632221103",
+              "name": "东川镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632221200",
+              "name": "皇城蒙古族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "632221201",
+              "name": "苏吉滩乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632221202",
+              "name": "北山乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632221203",
+              "name": "西滩乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632221204",
+              "name": "麻莲乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632221205",
+              "name": "阴田乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632221206",
+              "name": "仙米乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632221207",
+              "name": "珠固乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632222",
           "name": "祁连县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632222100",
+              "name": "八宝镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632222101",
+              "name": "峨堡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632222102",
+              "name": "默勒镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632222200",
+              "name": "扎麻什乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632222201",
+              "name": "阿柔乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632222202",
+              "name": "野牛沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632222203",
+              "name": "央隆乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632223",
           "name": "海晏县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632223100",
+              "name": "三角城镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632223101",
+              "name": "西海镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632223200",
+              "name": "金滩乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632223201",
+              "name": "哈勒景蒙古族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            },
+            {
+              "code": "632223202",
+              "name": "青海湖乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632223203",
+              "name": "甘子河乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632224",
           "name": "刚察县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632224100",
+              "name": "沙柳河镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632224101",
+              "name": "哈尔盖镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632224201",
+              "name": "伊克乌兰乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632224202",
+              "name": "泉吉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632224203",
+              "name": "吉尔孟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -158,28 +1589,263 @@
           "name": "同仁市",
           "level": 3,
           "type": "县级市",
-          "children": []
+          "children": [
+            {
+              "code": "632301100",
+              "name": "隆务镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632301101",
+              "name": "保安镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632301102",
+              "name": "多哇镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632301200",
+              "name": "兰采乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632301201",
+              "name": "双朋西乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632301202",
+              "name": "扎毛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632301203",
+              "name": "黄乃亥乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632301204",
+              "name": "曲库乎乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632301205",
+              "name": "年都乎乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632301206",
+              "name": "瓜什则乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632301207",
+              "name": "加吾乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632322",
           "name": "尖扎县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632322100",
+              "name": "马克唐镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632322101",
+              "name": "康杨镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632322102",
+              "name": "坎布拉镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632322200",
+              "name": "贾加乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632322201",
+              "name": "措周乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632322202",
+              "name": "昂拉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632322203",
+              "name": "能科乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632322204",
+              "name": "当顺乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632322205",
+              "name": "尖扎滩乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632323",
           "name": "泽库县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632323100",
+              "name": "泽曲镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632323102",
+              "name": "和日镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632323105",
+              "name": "麦秀镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632323106",
+              "name": "宁秀镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632323203",
+              "name": "王家乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632323206",
+              "name": "西卜沙乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632323207",
+              "name": "多禾茂乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632324",
           "name": "河南蒙古族自治县",
           "level": 3,
           "type": "自治县",
-          "children": []
+          "children": [
+            {
+              "code": "632324100",
+              "name": "优干宁镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632324101",
+              "name": "宁木特镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632324202",
+              "name": "赛尔龙乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632324203",
+              "name": "柯生乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632324204",
+              "name": "多松乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632324205",
+              "name": "托叶玛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -194,35 +1860,292 @@
           "name": "共和县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632521100",
+              "name": "恰卜恰镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632521101",
+              "name": "塘格木镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632521102",
+              "name": "倒淌河镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632521103",
+              "name": "龙羊峡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632521104",
+              "name": "江西沟镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632521105",
+              "name": "黑马河镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632521106",
+              "name": "石乃亥镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632521201",
+              "name": "廿地乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632521202",
+              "name": "沙珠玉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632521204",
+              "name": "铁盖乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632521211",
+              "name": "切吉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632522",
           "name": "同德县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632522100",
+              "name": "尕巴松多镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632522101",
+              "name": "唐谷镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632522200",
+              "name": "巴沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632522203",
+              "name": "秀麻乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632522204",
+              "name": "河北乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632523",
           "name": "贵德县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632523101",
+              "name": "河阴镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632523102",
+              "name": "河西镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632523103",
+              "name": "拉西瓦镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632523104",
+              "name": "常牧镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632523201",
+              "name": "河东乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632523203",
+              "name": "尕让乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632523204",
+              "name": "新街回族乡",
+              "level": 4,
+              "type": "民族乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632524",
           "name": "兴海县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632524100",
+              "name": "子科滩镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632524101",
+              "name": "河卡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632524102",
+              "name": "曲什安镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632524200",
+              "name": "唐乃亥乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632524202",
+              "name": "中铁乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632524204",
+              "name": "龙藏乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632524205",
+              "name": "温泉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632525",
           "name": "贵南县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632525100",
+              "name": "茫曲镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632525101",
+              "name": "过马营镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632525102",
+              "name": "森多镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632525200",
+              "name": "沙沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632525202",
+              "name": "茫拉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632525203",
+              "name": "塔秀乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -237,42 +2160,356 @@
           "name": "玛沁县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632621100",
+              "name": "大武镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632621101",
+              "name": "拉加镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632621200",
+              "name": "大武乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632621201",
+              "name": "东倾沟乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632621202",
+              "name": "雪山乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632621203",
+              "name": "下大武乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632621204",
+              "name": "当洛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632621205",
+              "name": "优云乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632622",
           "name": "班玛县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632622100",
+              "name": "赛来塘镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632622200",
+              "name": "多贡麻乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632622201",
+              "name": "马可河乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632622202",
+              "name": "吉卡乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632622203",
+              "name": "达卡乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632622204",
+              "name": "知钦乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632622205",
+              "name": "江日堂乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632622206",
+              "name": "亚尔堂乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632622207",
+              "name": "灯塔乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632623",
           "name": "甘德县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632623100",
+              "name": "柯曲镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632623200",
+              "name": "上贡麻乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632623201",
+              "name": "下贡麻乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632623202",
+              "name": "岗龙乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632623203",
+              "name": "江千乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632623204",
+              "name": "青珍乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632623205",
+              "name": "下藏科乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632624",
           "name": "达日县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632624100",
+              "name": "吉迈镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632624200",
+              "name": "下红科乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624201",
+              "name": "上红科乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624202",
+              "name": "莫坝乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624203",
+              "name": "桑日麻乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624204",
+              "name": "特合土乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624205",
+              "name": "建设乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624206",
+              "name": "窝赛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624207",
+              "name": "德昂乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632624208",
+              "name": "满掌乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632625",
           "name": "久治县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632625100",
+              "name": "智青松多镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632625200",
+              "name": "白玉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632625201",
+              "name": "哇尔依乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632625202",
+              "name": "哇赛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632625203",
+              "name": "索乎日麻乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632625204",
+              "name": "门堂乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632626",
           "name": "玛多县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632626100",
+              "name": "玛查理镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632626101",
+              "name": "花石峡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632626200",
+              "name": "黄河乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632626201",
+              "name": "扎陵湖乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -287,42 +2524,384 @@
           "name": "玉树市",
           "level": 3,
           "type": "县级市",
-          "children": []
+          "children": [
+            {
+              "code": "632701001",
+              "name": "结古街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632701002",
+              "name": "西杭街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632701003",
+              "name": "扎西科街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632701004",
+              "name": "新寨街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632701101",
+              "name": "隆宝镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632701102",
+              "name": "下拉秀镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632701200",
+              "name": "仲达乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632701201",
+              "name": "巴塘乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632701202",
+              "name": "小苏莽乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632701203",
+              "name": "上拉秀乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632701204",
+              "name": "安冲乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632722",
           "name": "杂多县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632722100",
+              "name": "萨呼腾镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632722200",
+              "name": "查旦乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632722201",
+              "name": "昂赛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632722202",
+              "name": "结多乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632722203",
+              "name": "阿多乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632722204",
+              "name": "苏鲁乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632722206",
+              "name": "莫云乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632722207",
+              "name": "扎青乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632723",
           "name": "称多县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632723100",
+              "name": "称文镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632723101",
+              "name": "歇武镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632723102",
+              "name": "扎朵镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632723103",
+              "name": "清水河镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632723104",
+              "name": "珍秦镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632723200",
+              "name": "尕朵乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632723201",
+              "name": "拉布乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632724",
           "name": "治多县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632724100",
+              "name": "加吉博洛镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632724200",
+              "name": "索加乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632724201",
+              "name": "扎河乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632724202",
+              "name": "多彩乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632724203",
+              "name": "治渠乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632724205",
+              "name": "立新乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632725",
           "name": "囊谦县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632725100",
+              "name": "香达镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632725201",
+              "name": "白扎乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725202",
+              "name": "娘拉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725203",
+              "name": "毛庄乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725204",
+              "name": "觉拉乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725205",
+              "name": "东坝乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725206",
+              "name": "吉曲乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725207",
+              "name": "尕羊乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725208",
+              "name": "吉尼赛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632725209",
+              "name": "着晓乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632726",
           "name": "曲麻莱县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632726100",
+              "name": "约改镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632726200",
+              "name": "巴干乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632726202",
+              "name": "秋智乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632726203",
+              "name": "叶格乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632726204",
+              "name": "麻多乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632726205",
+              "name": "曲麻河乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -337,42 +2916,335 @@
           "name": "格尔木市",
           "level": 3,
           "type": "县级市",
-          "children": []
+          "children": [
+            {
+              "code": "632801001",
+              "name": "昆仑路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632801002",
+              "name": "金峰路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632801003",
+              "name": "河西街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632801004",
+              "name": "黄河路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632801005",
+              "name": "西藏路街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632801100",
+              "name": "郭勒木德镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632801101",
+              "name": "唐古拉山镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632801200",
+              "name": "大格勒乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632801201",
+              "name": "乌图美仁乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632802",
           "name": "德令哈市",
           "level": 3,
           "type": "县级市",
-          "children": []
+          "children": [
+            {
+              "code": "632802001",
+              "name": "火车站街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632802002",
+              "name": "河东街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632802003",
+              "name": "河西街道",
+              "level": 4,
+              "type": "街道",
+              "children": []
+            },
+            {
+              "code": "632802100",
+              "name": "尕海镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632802101",
+              "name": "怀头他拉镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632802102",
+              "name": "柯鲁柯镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632802200",
+              "name": "蓄集乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632803",
           "name": "茫崖市",
           "level": 3,
           "type": "县级市",
-          "children": []
+          "children": [
+            {
+              "code": "632803100",
+              "name": "茫崖镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632803101",
+              "name": "花土沟镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632803102",
+              "name": "冷湖镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632821",
           "name": "乌兰县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632821100",
+              "name": "希里沟镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632821101",
+              "name": "茶卡镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632821102",
+              "name": "柯柯镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632821103",
+              "name": "铜普镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632822",
           "name": "都兰县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632822100",
+              "name": "察汗乌苏镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632822101",
+              "name": "香日德镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632822102",
+              "name": "夏日哈镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632822103",
+              "name": "宗加镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632822200",
+              "name": "热水乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632822201",
+              "name": "香加乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632822202",
+              "name": "沟里乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632822203",
+              "name": "巴隆乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         },
         {
           "code": "632823",
           "name": "天峻县",
           "level": 3,
           "type": "县",
-          "children": []
+          "children": [
+            {
+              "code": "632823100",
+              "name": "新源镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632823101",
+              "name": "江河镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632823102",
+              "name": "木里镇",
+              "level": 4,
+              "type": "镇",
+              "children": []
+            },
+            {
+              "code": "632823200",
+              "name": "阳康乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632823201",
+              "name": "织合玛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632823202",
+              "name": "龙门乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632823203",
+              "name": "快尔玛乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632823204",
+              "name": "苏里乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632823205",
+              "name": "生格乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            },
+            {
+              "code": "632823206",
+              "name": "舟群乡",
+              "level": 4,
+              "type": "乡",
+              "children": []
+            }
+          ]
         }
       ]
     }

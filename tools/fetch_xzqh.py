@@ -51,7 +51,7 @@ def request_text(url: str, timeout: int, retries: int = 6) -> str:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 charset = resp.headers.get_content_charset() or "utf-8"
                 return resp.read().decode(charset)
-        except (urllib.error.URLError, TimeoutError) as exc:
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
             last_error = exc
             if attempt < retries:
                 time.sleep(min(60, 2 * attempt * attempt))
@@ -161,24 +161,47 @@ def has_township_data(province_tree: dict[str, Any]) -> bool:
     return bool(counties) and all(node.get("children") for node in counties)
 
 
-def enrich_county_children(province_tree: dict[str, Any], timeout: int, workers: int) -> int:
+def enrich_county_children(
+    province_tree: dict[str, Any],
+    timeout: int,
+    workers: int,
+    county_sleep: float = 0.0,
+    autosave_path: Path | None = None,
+) -> int:
     counties = collect_nodes_by_level(province_tree, 3)
     if not counties:
         return 0
 
     by_code = {str(node.get("code") or ""): node for node in counties}
     fetched = 0
+    pending_codes = [code for code, node in by_code.items() if code and not node.get("children")]
+    if workers <= 1:
+        for code in pending_codes:
+            county_tree = fetch_county_tree(code, timeout)
+            by_code[code]["children"] = county_tree.get("children", [])
+            fetched += 1
+            if autosave_path and fetched % 10 == 0:
+                write_json(autosave_path, province_tree)
+            if county_sleep > 0:
+                time.sleep(county_sleep)
+        if autosave_path:
+            write_json(autosave_path, province_tree)
+        return fetched
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         future_map = {
             executor.submit(fetch_county_tree, code, timeout): code
-            for code in by_code
-            if code
+            for code in pending_codes
         }
         for future in concurrent.futures.as_completed(future_map):
             code = future_map[future]
             county_tree = future.result()
             by_code[code]["children"] = county_tree.get("children", [])
             fetched += 1
+            if county_sleep > 0:
+                time.sleep(county_sleep)
+    if autosave_path:
+        write_json(autosave_path, province_tree)
     return fetched
 
 
@@ -435,6 +458,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT, help="HTTP timeout seconds")
     parser.add_argument("--sleep", type=float, default=0.2, help="sleep seconds between province requests")
     parser.add_argument("--workers", type=int, default=2, help="parallel county requests, default: 2")
+    parser.add_argument("--county-sleep", type=float, default=0.3, help="sleep seconds between county requests")
     parser.add_argument("--no-townships", action="store_true", help="only fetch province/city/county levels")
     parser.add_argument("--reuse", action="store_true", help="reuse existing province JSON files when present")
     return parser.parse_args()
@@ -467,7 +491,13 @@ def main() -> None:
         tree = read_json(json_path) if args.reuse and json_path.exists() else fetch_province_tree(code, args.timeout)
         county_requests = 0
         if not args.no_townships and not has_township_data(tree):
-            county_requests = enrich_county_children(tree, args.timeout, args.workers)
+            county_requests = enrich_county_children(
+                tree,
+                args.timeout,
+                args.workers,
+                county_sleep=args.county_sleep,
+                autosave_path=json_path,
+            )
             write_json(json_path, tree)
         elif not json_path.exists():
             write_json(json_path, tree)
