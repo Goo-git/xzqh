@@ -107,17 +107,24 @@ python -m app
 - **生成 SQL/CSV** — 下拉选版本与方言，点「生成」即可，完成后可一键打开输出目录。
 - **数据预览** — 树状浏览省 / 地 / 县 / 乡，展开县级时懒加载乡级，避免一次塞 38k+ 节点；支持按名称或 code 过滤。
 
-### 本地打包成 exe
+### 本地打包成单体 exe（Portable）
 ```bash
 pip install -r requirements.txt -r requirements-dev.txt
+python tools/make_icons.py                       # 生成图标（首次需要）
 pyinstaller packaging/xzqh-gui.spec --noconfirm
 ```
-产物落在 `dist/xzqh-gui/`（onedir 模式，含 `xzqh-gui.exe` 与 `_internal/`）。
+产物：
+- Windows：`dist/xzqh-gui.exe`（单文件，约 46MB，双击即用）
+- macOS：`dist/xzqh-gui.app`（应用包，可拖到「应用程序」）
 
 ### CI 自动构建（GitHub Actions）
 - 触发：push `v*` 标签 或 push `release/**` 分支（也可 workflow_dispatch 手动）
-- 产物：`xzqh-gui-windows-onedir` Artifact，30 天保留
-- 推 `v*` 标签时额外打 zip 并上传到 GitHub Release
+- 矩阵：`windows-latest` 出 `.exe`，`macos-latest` 出 `.app`（在 runner 上用 `iconutil` 现场转 `.icns`）
+- Artifact：`xzqh-gui-windows.exe`、`xzqh-gui-macos.app.zip`（30 天保留）
+- 推 `v*` 标签时自动创建 GitHub Release 并挂上两平台附件，含基于 commit 的 release notes
+
+### 图标
+程序图标在 `assets/icon.png` / `assets/icon.ico`，由 `tools/make_icons.py` 用 Pillow 生成。想换个外观直接改脚本里的颜色或几何参数重跑即可。
 
 ---
 

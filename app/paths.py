@@ -37,3 +37,21 @@ def tools_dir() -> Path:
     if src_tools.is_dir():
         return src_tools
     return app_root() / "tools"
+
+
+def icon_path() -> Path | None:
+    """Resolve the bundled PNG icon for QIcon use at runtime.
+
+    Looks in PyInstaller's _MEIPASS first (when frozen, where datas are
+    extracted), then falls back to the source tree. Returns None if neither
+    exists so callers can degrade gracefully.
+    """
+    candidates: list[Path] = []
+    meipass = getattr(sys, "_MEIPASS", None)
+    if meipass:
+        candidates.append(Path(meipass) / "assets" / "icon.png")
+    candidates.append(Path(__file__).resolve().parent.parent / "assets" / "icon.png")
+    for p in candidates:
+        if p.is_file():
+            return p
+    return None

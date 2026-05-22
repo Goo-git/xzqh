@@ -31,9 +31,14 @@ class FetchTab(QWidget):
 
     def _build_ui(self) -> None:
         root = QVBoxLayout(self)
+        root.setContentsMargins(20, 16, 20, 16)
+        root.setSpacing(12)
 
         form_box = QGroupBox("参数")
         form = QFormLayout(form_box)
+        form.setHorizontalSpacing(14)
+        form.setVerticalSpacing(10)
+        form.setContentsMargins(14, 18, 14, 14)
 
         self.output_dir = QLineEdit(str(default_data_dir()))
         pick_out = QPushButton("浏览…")
@@ -77,9 +82,12 @@ class FetchTab(QWidget):
         root.addWidget(form_box)
 
         button_row = QHBoxLayout()
+        button_row.setSpacing(8)
         self.start_btn = QPushButton("开始抓取")
+        self.start_btn.setProperty("primary", True)
         self.start_btn.clicked.connect(self._start)
         self.cancel_btn = QPushButton("取消")
+        self.cancel_btn.setProperty("danger", True)
         self.cancel_btn.clicked.connect(self._cancel)
         self.cancel_btn.setEnabled(False)
         button_row.addStretch(1)

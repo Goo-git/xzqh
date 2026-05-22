@@ -17,6 +17,7 @@ class LogView(QWidget):
         super().__init__(parent)
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(8)
 
         self.progress = QProgressBar(self)
         self.progress.setRange(0, 1)
@@ -28,8 +29,10 @@ class LogView(QWidget):
         self.text = QPlainTextEdit(self)
         self.text.setReadOnly(True)
         self.text.setMaximumBlockCount(5000)
-        mono = QFont("Consolas")
+        self.text.setPlaceholderText("日志输出会显示在这里…")
+        mono = QFont("Cascadia Mono")
         mono.setStyleHint(QFont.StyleHint.Monospace)
+        mono.setPointSize(10)
         self.text.setFont(mono)
         layout.addWidget(self.text, stretch=1)
 

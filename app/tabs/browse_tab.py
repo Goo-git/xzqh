@@ -38,19 +38,24 @@ class BrowseTab(QWidget):
 
     def _build_ui(self) -> None:
         root = QVBoxLayout(self)
+        root.setContentsMargins(20, 16, 20, 16)
+        root.setSpacing(10)
 
         # Top: data dir + version selector
         top = QHBoxLayout()
+        top.setSpacing(8)
         self.data_dir = QLineEdit(str(default_data_dir()))
         pick = QPushButton("浏览…")
         pick.clicked.connect(self._pick_data_dir)
         reload_btn = QPushButton("刷新")
         reload_btn.clicked.connect(self._reload_versions)
         self.version = QComboBox()
+        self.version.setMinimumWidth(180)
         self.version.currentTextChanged.connect(self._on_version_changed)
         top.addWidget(QLabel("数据目录"))
         top.addWidget(self.data_dir, stretch=1)
         top.addWidget(pick)
+        top.addSpacing(8)
         top.addWidget(QLabel("版本"))
         top.addWidget(self.version)
         top.addWidget(reload_btn)
@@ -58,6 +63,7 @@ class BrowseTab(QWidget):
 
         # Filter
         filter_row = QHBoxLayout()
+        filter_row.setSpacing(8)
         self.filter_edit = QLineEdit()
         self.filter_edit.setPlaceholderText("按名称或 code 过滤当前展开的节点…")
         self.filter_edit.textChanged.connect(self._apply_filter)
@@ -70,19 +76,27 @@ class BrowseTab(QWidget):
         self.tree = QTreeWidget()
         self.tree.setColumnCount(3)
         self.tree.setHeaderLabels(["名称", "代码", "类型"])
-        self.tree.setColumnWidth(0, 280)
-        self.tree.setColumnWidth(1, 110)
+        self.tree.setColumnWidth(0, 320)
+        self.tree.setColumnWidth(1, 120)
+        self.tree.setAlternatingRowColors(True)
+        self.tree.setUniformRowHeights(True)
+        self.tree.setRootIsDecorated(True)
         self.tree.itemExpanded.connect(self._on_expanded)
         self.tree.currentItemChanged.connect(self._on_current_changed)
         splitter.addWidget(self.tree)
 
         self.detail = QLabel("（未选择节点）")
         self.detail.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
-        self.detail.setMargin(10)
+        self.detail.setMargin(16)
         self.detail.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        self.detail.setStyleSheet(
+            "QLabel { background-color: #25272d; border: 1px solid #3a3e47; "
+            "border-radius: 5px; }"
+        )
         splitter.addWidget(self.detail)
         splitter.setStretchFactor(0, 3)
         splitter.setStretchFactor(1, 1)
+        splitter.setSizes([780, 360])
         root.addWidget(splitter, stretch=1)
 
     # ----- version handling -----
