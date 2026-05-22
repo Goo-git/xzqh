@@ -107,24 +107,74 @@ python -m app
 - **生成 SQL/CSV** — 下拉选版本与方言，点「生成」即可，完成后可一键打开输出目录。
 - **数据预览** — 树状浏览省 / 地 / 县 / 乡，展开县级时懒加载乡级，避免一次塞 38k+ 节点；支持按名称或 code 过滤。
 
-### 本地打包成单体 exe（Portable）
+### 编译与独立打包 (Compilation & Packaging)
+
+项目提供了方便的本地打包脚本与 CI 自动化流水线，可将 Python 源码直接编译打包为**无 Python 运行环境依赖、双击即用**的单体客户端可执行文件。
+
+#### 1. 准备工作 (Prerequisites)
+
+首先，需要确保安装了开发与打包所需的全部依赖（包括 `pyinstaller` 与 `Pillow` 图标生成库）：
 ```bash
-pip install -r requirements.txt -r requirements-dev.txt
-python tools/make_icons.py                       # 生成图标（首次需要）
+# 安装基础运行依赖
+pip install -r requirements.txt
+
+# 安装开发与打包专用依赖
+pip install -r requirements-dev.txt
+```
+
+#### 2. 生成程序图标 (Icon Generation)
+程序图标位于 `assets/` 目录中。在打包前，必须确保这些图标已被正确生成。您可以通过以下幂等命令随时重新生成程序图标（含 Windows 所需的多尺寸 ICO 和主窗口 PNG 图标）：
+```bash
+python tools/make_icons.py
+```
+> [!NOTE]
+> - `make_icons.py` 依赖 `Pillow` 库，会自动读取配置的渐变色和几何结构并生成 `assets/icon.png` 与 `assets/icon.ico`。
+> - macOS 所需的 `.icns` 格式图标，在本地无需额外关注。CI 端会在 macOS 环境下通过系统原生的 `iconutil` 命令从高清 PNG 现场转换产出。
+
+#### 3. 本地编译打包 (Local Packaging)
+使用 PyInstaller 配合项目已配置好的 `.spec` 描述文件进行一键封装：
+```bash
 pyinstaller packaging/xzqh-gui.spec --noconfirm
 ```
-产物：
-- Windows：`dist/xzqh-gui.exe`（单文件，约 46MB，双击即用）
-- macOS：`dist/xzqh-gui.app`（应用包，可拖到「应用程序」）
 
-### CI 自动构建（GitHub Actions）
-- 触发：push `v*` 标签 或 push `release/**` 分支（也可 workflow_dispatch 手动）
-- 矩阵：`windows-latest` 出 `.exe`，`macos-latest` 出 `.app`（在 runner 上用 `iconutil` 现场转 `.icns`）
-- Artifact：`xzqh-gui-windows.exe`、`xzqh-gui-macos.app.zip`（30 天保留）
-- 推 `v*` 标签时自动创建 GitHub Release 并挂上两平台附件，含基于 commit 的 release notes
+**编译配置说明 (`packaging/xzqh-gui.spec`):**
+- **打包模式**: 单文件模式 (`onefile`)，将 Python 解析器、动态链接库和 `assets/icon.png` 资源包全部打入单体 EXE。
+- **无命令行窗口**: 已设定 `console=False`，双击启动时纯窗口化运行，不会弹出黑色的 CMD 命令行窗口。
+- **代码修剪**: 自动排除 `tkinter` 等无关依赖，缩减包体体积。
 
-### 图标
-程序图标在 `assets/icon.png` / `assets/icon.ico`，由 `tools/make_icons.py` 用 Pillow 生成。想换个外观直接改脚本里的颜色或几何参数重跑即可。
+**编译产物路径:**
+- **Windows**: `dist/xzqh-gui.exe` (单文件可执行程序，双击即用，约 46MB)
+- **macOS**: `dist/xzqh-gui.app` (标准应用安装包，支持直接拖拽至「应用程序」文件夹)
+
+#### 4. GitHub Actions CI 自动构建 (CI/CD Automated Build)
+项目配置了完善的 GitHub Actions 流水线，可在 CI 云端全自动跨平台构建。
+- **流水线配置文件**: `.github/workflows/build-app.yml`
+- **触发条件**:
+  - 推送形如 `v*` 的版本标签（例如 `git push origin v1.0`）
+  - 推送或合并至 `release/**` 分支
+  - 亦可在 GitHub Action 界面手动点击 `workflow_dispatch` 触发。
+- **流水线逻辑**:
+  - 分别启动 `windows-latest` 和 `macos-latest` 两路矩阵节点。
+  - 在 macOS runner 上自动调用 `iconutil` 将高清 icon 转换为 `.icns`。
+  - 生成 `xzqh-gui-windows.exe` 和 `xzqh-gui-macos.app.zip` 产物（云端保留 30天）。
+  - 若为 `v*` 标签触发，则会自动创建相应的 **GitHub Release** 并挂载这两份打包产物，同时利用 commit logs 自动生成发布日志。
+
+#### 5. 常见打包与运行问题 (Troubleshooting)
+
+> [!WARNING]
+> **Windows SmartScreen 阻止运行 (未签名误报)**
+> 由于打包生成的 `.exe` 文件没有购买商业数字证书签名，Windows Defender 或 SmartScreen 可能会在初次运行时提示“未知的发布者”。这属于 PyInstaller 封装程序的正常现象。
+> **解决方法**: 点击提示弹窗中的“更多信息”，然后点击“仍要运行”即可；或者手动将文件加入安全白名单。
+
+> [!IMPORTANT]
+> **macOS “无法打开，因为无法验证开发者” (Gatekeeper)**
+> 在 macOS 首次双击打开 `.app` 时，系统可能会因为未签名拒绝打开。
+> **解决方法**: 
+> 1. 打开系统的“系统设置 -> 隐私与安全性”，找到底部提示并点击“仍要打开”；
+> 2. 或者在终端运行以下命令，解除 Gatekeeper 对该应用的限制：
+>    ```bash
+>    xattr -d com.apple.quarantine /path/to/xzqh-gui.app
+>    ```
 
 ---
 
