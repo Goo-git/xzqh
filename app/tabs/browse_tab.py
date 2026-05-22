@@ -39,7 +39,7 @@ class BrowseTab(QWidget):
     def _build_ui(self) -> None:
         root = QVBoxLayout(self)
         root.setContentsMargins(20, 16, 20, 16)
-        root.setSpacing(10)
+        root.setSpacing(12)
 
         # Top: data dir + version selector
         top = QHBoxLayout()
@@ -52,11 +52,17 @@ class BrowseTab(QWidget):
         self.version = QComboBox()
         self.version.setMinimumWidth(180)
         self.version.currentTextChanged.connect(self._on_version_changed)
-        top.addWidget(QLabel("数据目录"))
+
+        lbl_dir = QLabel("数据目录:")
+        lbl_dir.setStyleSheet("font-weight: bold; color: #8a93a6;")
+        lbl_ver = QLabel("选择版本:")
+        lbl_ver.setStyleSheet("font-weight: bold; color: #8a93a6;")
+
+        top.addWidget(lbl_dir)
         top.addWidget(self.data_dir, stretch=1)
         top.addWidget(pick)
-        top.addSpacing(8)
-        top.addWidget(QLabel("版本"))
+        top.addSpacing(12)
+        top.addWidget(lbl_ver)
         top.addWidget(self.version)
         top.addWidget(reload_btn)
         root.addLayout(top)
@@ -65,9 +71,12 @@ class BrowseTab(QWidget):
         filter_row = QHBoxLayout()
         filter_row.setSpacing(8)
         self.filter_edit = QLineEdit()
-        self.filter_edit.setPlaceholderText("按名称或 code 过滤当前展开的节点…")
+        self.filter_edit.setPlaceholderText(" 输入名称或代码，实时过滤已展开的区划节点…")
         self.filter_edit.textChanged.connect(self._apply_filter)
-        filter_row.addWidget(QLabel("过滤"))
+
+        filter_label = QLabel("检索过滤:")
+        filter_label.setStyleSheet("font-weight: bold; color: #8a93a6;")
+        filter_row.addWidget(filter_label)
         filter_row.addWidget(self.filter_edit, stretch=1)
         root.addLayout(filter_row)
 
@@ -85,13 +94,21 @@ class BrowseTab(QWidget):
         self.tree.currentItemChanged.connect(self._on_current_changed)
         splitter.addWidget(self.tree)
 
-        self.detail = QLabel("（未选择节点）")
+        self.detail = QLabel()
         self.detail.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
-        self.detail.setMargin(16)
+        self.detail.setMargin(18)
         self.detail.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
         self.detail.setStyleSheet(
-            "QLabel { background-color: #25272d; border: 1px solid #3a3e47; "
-            "border-radius: 5px; }"
+            "QLabel {"
+            "  background-color: #12151c;"
+            "  border: 1px solid #222631;"
+            "  border-radius: 8px;"
+            "}"
+        )
+        self.detail.setText(
+            "<div style=\"font-size: 14px; color: #8a93a6; font-family: 'Segoe UI', sans-serif; text-align: center; margin-top: 140px;\">"
+            "（请选择左侧树节点以查看详情）"
+            "</div>"
         )
         splitter.addWidget(self.detail)
         splitter.setStretchFactor(0, 3)
@@ -137,7 +154,7 @@ class BrowseTab(QWidget):
         try:
             province_index = json.loads(index_path.read_text(encoding="utf-8"))
         except Exception as exc:  # noqa: BLE001
-            self.detail.setText(f"读取 province_index.json 失败：{exc}")
+            self.detail.setText(f"<div style='color: #ef4444;'>读取 province_index.json 失败：<br>{exc}</div>")
             return
 
         for entry in province_index:
@@ -187,28 +204,110 @@ class BrowseTab(QWidget):
 
     def _on_current_changed(self, item: QTreeWidgetItem | None, _prev: QTreeWidgetItem | None) -> None:
         if item is None:
-            self.detail.setText("（未选择节点）")
+            self.detail.setText(
+                "<div style=\"font-size: 14px; color: #8a93a6; font-family: 'Segoe UI', sans-serif; text-align: center; margin-top: 140px;\">"
+                "（请选择左侧树节点以查看详情）"
+                "</div>"
+            )
             return
         node = item.data(0, _NODE_ROLE)
         if not isinstance(node, dict):
-            self.detail.setText("（无详情）")
+            self.detail.setText(
+                "<div style=\"font-size: 14px; color: #ef4444; font-family: 'Segoe UI', sans-serif; text-align: center; margin-top: 140px;\">"
+                "（无详情数据）"
+                "</div>"
+            )
             return
         parent = item.parent()
         parent_node = parent.data(0, _NODE_ROLE) if parent is not None else None
-        parent_str = "（顶层）"
+        parent_str = "<span style='color: #8a93a6;'>（无，已是最顶层）</span>"
         if isinstance(parent_node, dict):
-            parent_str = f"{parent_node.get('code')} {parent_node.get('name')}"
+            parent_str = f"<b style='color: #ffffff;'>{parent_node.get('name')}</b> <span style='font-family: monospace; color: #8a93a6;'>({parent_node.get('code')})</span>"
+        
         level = int(node.get("level") or 0)
-        children = node.get("children") or []
-        self.detail.setText(
-            "<b>详情</b><br>"
-            f"<b>code:</b> {node.get('code')}<br>"
-            f"<b>name:</b> {node.get('name')}<br>"
-            f"<b>level:</b> {level} ({LEVEL_NAMES.get(level, '?')})<br>"
-            f"<b>type:</b> {node.get('type') or '-'}<br>"
-            f"<b>parent:</b> {parent_str}<br>"
-            f"<b>children:</b> {len(children)}"
+        level_name = LEVEL_NAMES.get(level, '?')
+
+        # Decide color tags based on levels
+        if level == 1:
+            badge_color = "#3b82f6"
+            badge_bg = "rgba(59, 130, 246, 0.15)"
+            badge_border = "rgba(59, 130, 246, 0.3)"
+        elif level == 2:
+            badge_color = "#10b981"
+            badge_bg = "rgba(16, 185, 129, 0.15)"
+            badge_border = "rgba(16, 185, 129, 0.3)"
+        elif level == 3:
+            badge_color = "#fbbf24"
+            badge_bg = "rgba(245, 158, 11, 0.15)"
+            badge_border = "rgba(245, 158, 11, 0.3)"
+        elif level == 4:
+            badge_color = "#a78bfa"
+            badge_bg = "rgba(139, 92, 246, 0.15)"
+            badge_border = "rgba(139, 92, 246, 0.3)"
+        else:
+            badge_color = "#8a93a6"
+            badge_bg = "rgba(138, 147, 166, 0.15)"
+            badge_border = "rgba(138, 147, 166, 0.3)"
+
+        badge_html = (
+            f'<span style="'
+            f'  background-color: {badge_bg};'
+            f'  color: {badge_color};'
+            f'  border: 1px solid {badge_border};'
+            f'  padding: 3px 10px;'
+            f'  border-radius: 4px;'
+            f'  font-size: 11px;'
+            f'  font-weight: bold;'
+            f'">{level_name}</span>'
         )
+
+        children_count = len(node.get("children") or [])
+        children_badge = (
+            f'<span style="'
+            f'  background-color: rgba(255, 255, 255, 0.06);'
+            f'  color: #ffffff;'
+            f'  padding: 2px 8px;'
+            f'  border-radius: 3px;'
+            f'  font-size: 11px;'
+            f'  font-weight: bold;'
+            f'">{children_count}</span>'
+        )
+
+        html = f"""
+        <div style="font-family: 'Segoe UI', 'PingFang SC', sans-serif;">
+            <div style="font-size: 15px; font-weight: bold; color: #ffffff; border-bottom: 1px solid #222631; padding-bottom: 10px; margin-bottom: 14px;">
+                节点详情
+            </div>
+            
+            <table cellpadding="6" cellspacing="0" style="width: 100%;">
+                <tr>
+                    <td style="color: #8a93a6; font-weight: 500; width: 70px;">节点名称</td>
+                    <td style="color: #ffffff; font-size: 15px; font-weight: bold;">{node.get('name')}</td>
+                </tr>
+                <tr>
+                    <td style="color: #8a93a6; font-weight: 500;">区划代码</td>
+                    <td style="color: #3b82f6; font-family: monospace; font-size: 13px; font-weight: bold;">{node.get('code')}</td>
+                </tr>
+                <tr>
+                    <td style="color: #8a93a6; font-weight: 500;">行政级别</td>
+                    <td>{badge_html}</td>
+                </tr>
+                <tr>
+                    <td style="color: #8a93a6; font-weight: 500;">行政类型</td>
+                    <td style="color: #e2e8f0; font-weight: 500;">{node.get('type') or '-'}</td>
+                </tr>
+                <tr>
+                    <td style="color: #8a93a6; font-weight: 500;">父级节点</td>
+                    <td>{parent_str}</td>
+                </tr>
+                <tr>
+                    <td style="color: #8a93a6; font-weight: 500;">下级子项</td>
+                    <td style="color: #e2e8f0;">{children_badge} <span style="font-size: 12px; color: #8a93a6;">个子节点</span></td>
+                </tr>
+            </table>
+        </div>
+        """
+        self.detail.setText(html)
 
     # ----- filtering -----
 
