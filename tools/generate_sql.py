@@ -51,7 +51,7 @@ def detect_latest_version(data_root: Path) -> str:
     return sorted(candidates)[-1]
 
 
-def load_version(data_root: Path, version: str) -> list[dict[str, Any]]:
+def load_version(data_root: Path, version: str) -> tuple[list[dict[str, Any]], list[str]]:
     version_dir = data_root / version
     index_path = version_dir / "province_index.json"
     if not index_path.exists():
@@ -59,11 +59,12 @@ def load_version(data_root: Path, version: str) -> list[dict[str, Any]]:
     province_index = json.loads(index_path.read_text(encoding="utf-8"))
 
     rows: list[dict[str, Any]] = []
+    skipped: list[str] = []
     for entry in province_index:
         tree_path = version_dir / entry["file"]
         tree = json.loads(tree_path.read_text(encoding="utf-8"))
-        _walk_tree(tree, parent_code=None, sort_order=0, rows=rows)
-    return rows
+        _walk_tree(tree, parent_code=None, sort_order=0, rows=rows, skipped=skipped)
+    return rows, skipped
 
 
 def _walk_tree(
@@ -71,8 +72,14 @@ def _walk_tree(
     parent_code: str | None,
     sort_order: int,
     rows: list[dict[str, Any]],
+    skipped: list[str],
 ) -> None:
     code = str(node.get("code") or "")
+    # Skip placeholder nodes (non-numeric code, e.g. "资料暂缺" 台湾省) and the
+    # entire subtree below them — keeps FK satisfiable and avoids orphan codes.
+    if not code.isdigit():
+        skipped.append(f"{code or '<empty>'}/{node.get('name') or ''}")
+        return
     rows.append({
         "code": code,
         "name": str(node.get("name") or ""),
@@ -83,7 +90,7 @@ def _walk_tree(
     })
     children = node.get("children") or []
     for idx, child in enumerate(children):
-        _walk_tree(child, parent_code=code or None, sort_order=idx, rows=rows)
+        _walk_tree(child, parent_code=code, sort_order=idx, rows=rows, skipped=skipped)
 
 
 def build_stats(rows: list[dict[str, Any]]) -> dict[str, int]:
@@ -477,11 +484,15 @@ def main() -> None:
     print(f"version    : {version}")
     print(f"dialects   : {', '.join(dialects)}")
     print("loading rows...")
-    rows = load_version(data_root, version)
+    rows, skipped = load_version(data_root, version)
     stats = build_stats(rows)
     print(f"loaded     : {stats['total']} rows  "
           f"(L1={stats['level_1']}, L2={stats['level_2']}, "
           f"L3={stats['level_3']}, L4={stats['level_4']})")
+    if skipped:
+        preview = ", ".join(skipped[:5])
+        more = f", ... +{len(skipped) - 5}" if len(skipped) > 5 else ""
+        print(f"skipped    : {len(skipped)} placeholder node(s): {preview}{more}")
 
     out_dir = Path(args.output_dir) / version
     out_dir.mkdir(parents=True, exist_ok=True)
