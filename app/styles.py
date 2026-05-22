@@ -55,7 +55,7 @@ QTabBar::tab:selected {
     color: #f3f4f6;
     border-bottom: 2px solid #3b82f6;
     font-weight: 600;
-    background: rgba(59, 130, 246, 0.08);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(59, 130, 246, 0.12), stop:1 rgba(59, 130, 246, 0.01));
     border-radius: 6px 6px 0 0;
 }
 
@@ -150,6 +150,7 @@ QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox, QPlainTextEdit {
 QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus,
 QComboBox:focus, QPlainTextEdit:focus {
     border-color: #3b82f6;
+    background-color: #0c0e14;
 }
 QLineEdit:disabled, QSpinBox:disabled, QDoubleSpinBox:disabled,
 QComboBox:disabled, QPlainTextEdit:disabled {
@@ -320,13 +321,17 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
 
 /* ----------------- Splitter ----------------- */
 QSplitter::handle {
-    background-color: #1a1e26;
+    background-color: #0d0f12;
 }
 QSplitter::handle:horizontal {
-    width: 4px;
+    width: 8px;
+    border-left: 1px solid #222631;
+    border-right: 1px solid #222631;
 }
 QSplitter::handle:vertical {
-    height: 4px;
+    height: 8px;
+    border-top: 1px solid #222631;
+    border-bottom: 1px solid #222631;
 }
 
 /* ----------------- Tool tips ----------------- */
@@ -342,5 +347,15 @@ QToolTip {
 QFormLayout QLabel {
     color: #8a93a6;
     font-weight: 500;
+}
+
+/* ----------------- Tip label card ----------------- */
+QLabel[tip="true"] {
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    background-color: rgba(59, 130, 246, 0.04);
+    border-radius: 6px;
+    padding: 10px 14px;
+    color: #8a93a6;
+    font-size: 12px;
 }
 """

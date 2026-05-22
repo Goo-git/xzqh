@@ -11,6 +11,7 @@ from PySide6.QtWidgets import (
     QFormLayout,
     QGroupBox,
     QHBoxLayout,
+    QLabel,
     QLineEdit,
     QPushButton,
     QSpinBox,
@@ -80,6 +81,13 @@ class FetchTab(QWidget):
         form.addRow(self.reuse)
 
         root.addWidget(form_box)
+
+        tip_label = QLabel(
+            "💡 <b>防刷限制提示</b>：抓取民政部官网数据时有较高的安全频控机制。建议保持默认的县级延迟间隔 (0.3s) 并合理设置并发数 (2)，以防止请求过快导致 IP 临时受限或数据漏抓。"
+        )
+        tip_label.setProperty("tip", True)
+        tip_label.setWordWrap(True)
+        root.addWidget(tip_label)
 
         button_row = QHBoxLayout()
         button_row.setSpacing(8)

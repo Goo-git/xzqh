@@ -14,6 +14,7 @@ from PySide6.QtWidgets import (
     QFormLayout,
     QGroupBox,
     QHBoxLayout,
+    QLabel,
     QLineEdit,
     QPushButton,
     QSpinBox,
@@ -87,6 +88,13 @@ class GenerateTab(QWidget):
         form.addRow(self.no_csv)
 
         root.addWidget(form_box)
+
+        tip_label = QLabel(
+            "💡 <b>建库落库提示</b>：生成脚本支持 MySQL 及 PostgreSQL 二种方言。所生成的 `data_upsert.sql` 脚本采用原生的幂等冲突更新机制 (UPSERT)，支持多版本共存与无损热更新覆盖。"
+        )
+        tip_label.setProperty("tip", True)
+        tip_label.setWordWrap(True)
+        root.addWidget(tip_label)
 
         button_row = QHBoxLayout()
         button_row.setSpacing(8)

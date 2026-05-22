@@ -33,7 +33,7 @@ class BrandHeader(QWidget):
         left_layout.setContentsMargins(0, 0, 0, 0)
         left_layout.setSpacing(4)
 
-        title = QLabel("中国行政区划数据集 · xzqh Suite")
+        title = QLabel("中国行政区划工具")
         title.setStyleSheet("font-size: 16px; font-weight: bold; color: #ffffff;")
         subtitle = QLabel("民政部官方数据一键抓取、多版本增量生成 SQL/CSV 与多级数据可视化面板")
         subtitle.setStyleSheet("font-size: 12px; color: #8a93a6;")
