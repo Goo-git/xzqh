@@ -475,24 +475,28 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def main() -> None:
-    args = parse_args()
+def run(args: argparse.Namespace, on_log=print) -> None:
+    """Execute generation with all print() routed through ``on_log``.
+
+    Accepts the same args namespace as the CLI; GUI callers should build an
+    equivalent ``argparse.Namespace`` (see ``argparse.Namespace`` constructor).
+    """
     data_root = Path(args.data_dir)
     version = args.version or detect_latest_version(data_root)
     dialects = args.dialect or ["mysql", "postgresql"]
 
-    print(f"version    : {version}")
-    print(f"dialects   : {', '.join(dialects)}")
-    print("loading rows...")
+    on_log(f"version    : {version}")
+    on_log(f"dialects   : {', '.join(dialects)}")
+    on_log("loading rows...")
     rows, skipped = load_version(data_root, version)
     stats = build_stats(rows)
-    print(f"loaded     : {stats['total']} rows  "
-          f"(L1={stats['level_1']}, L2={stats['level_2']}, "
-          f"L3={stats['level_3']}, L4={stats['level_4']})")
+    on_log(f"loaded     : {stats['total']} rows  "
+           f"(L1={stats['level_1']}, L2={stats['level_2']}, "
+           f"L3={stats['level_3']}, L4={stats['level_4']})")
     if skipped:
         preview = ", ".join(skipped[:5])
         more = f", ... +{len(skipped) - 5}" if len(skipped) > 5 else ""
-        print(f"skipped    : {len(skipped)} placeholder node(s): {preview}{more}")
+        on_log(f"skipped    : {len(skipped)} placeholder node(s): {preview}{more}")
 
     out_dir = Path(args.output_dir) / version
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -506,15 +510,19 @@ def main() -> None:
             gen_full_sql(rows, version, dialect, args.batch_size), encoding="utf-8")
         (dialect_dir / "data_upsert.sql").write_text(
             gen_upsert_sql(rows, version, dialect, args.batch_size), encoding="utf-8")
-        print(f"  wrote {dialect_dir}/")
+        on_log(f"  wrote {dialect_dir}/")
 
     if not args.no_csv:
         write_csv(out_dir / "csv" / "region.csv", rows, version)
-        print(f"  wrote {out_dir / 'csv' / 'region.csv'}")
+        on_log(f"  wrote {out_dir / 'csv' / 'region.csv'}")
 
     (out_dir / "README.md").write_text(gen_readme(version, stats), encoding="utf-8")
-    print(f"  wrote {out_dir / 'README.md'}")
-    print(f"done -> {out_dir}")
+    on_log(f"  wrote {out_dir / 'README.md'}")
+    on_log(f"done -> {out_dir}")
+
+
+def main() -> None:
+    run(parse_args())
 
 
 if __name__ == "__main__":

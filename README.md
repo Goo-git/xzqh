@@ -1,8 +1,15 @@
 # 中国行政区划数据集（xzqh）
 
+[![build-app](https://github.com/Goo-git/xzqh/actions/workflows/build-app.yml/badge.svg)](https://github.com/Goo-git/xzqh/actions/workflows/build-app.yml)
+
 一个**通用的、可被其他项目直接复用**的中国行政区划（省 / 地级 / 县级 / 乡级）数据集与建库工具，数据来自中华人民共和国民政部官网 <https://dmfw.mca.gov.cn>。
 
-提供两层产物：
+提供三种使用方式：
+1. **桌面 GUI**（`app/`）—— PySide6 写的可执行窗口程序，覆盖抓取 / 生成 / 浏览，免命令行。
+2. **CLI 脚本**（`tools/`）—— `fetch_xzqh.py`、`generate_sql.py`，适合自动化/CI 场景。
+3. **现成产物**（`dist/<version>/`）—— SQL/CSV，可直接灌库无需 Python。
+
+提供两层数据：
 1. **原始 JSON 树**（`data/<version>/provinces/*.json`）—— 由抓取脚本生成。
 2. **可落库 SQL / CSV**（`dist/<version>/`）—— 由生成脚本一键产出，覆盖 MySQL/MariaDB、PostgreSQL，以及通用 CSV。
 
@@ -68,10 +75,49 @@ xzqh/
 │       ├── postgresql/{schema,data_full,data_upsert}.sql
 │       ├── csv/region.csv
 │       └── README.md
-└── tools/
-    ├── fetch_xzqh.py                从民政部官网抓取最新数据
-    └── generate_sql.py              JSON → SQL/CSV 生成器
+├── app/                             PySide6 桌面 GUI
+│   ├── __main__.py                  入口（python -m app）
+│   ├── main_window.py               主窗 + 三个 Tab
+│   ├── paths.py                     兼容 PyInstaller 冻结后的路径解析
+│   ├── tabs/                        FetchTab / GenerateTab / BrowseTab
+│   ├── workers/                     QThread 包装 CLI 的 run(args, on_log)
+│   └── widgets/log_view.py          日志 + 进度条组合
+├── tools/
+│   ├── fetch_xzqh.py                从民政部官网抓取最新数据（CLI + run() 库函数）
+│   └── generate_sql.py              JSON → SQL/CSV 生成器（CLI + run() 库函数）
+├── packaging/
+│   └── xzqh-gui.spec                PyInstaller 配置
+├── .github/workflows/
+│   └── build-app.yml                push tag v* / release/** 触发，Windows 自动打包
+└── requirements{,-dev}.txt
 ```
+
+---
+
+## 桌面 GUI
+
+### 从源码运行
+```bash
+pip install -r requirements.txt
+python -m app
+```
+
+三个 Tab：
+- **抓取数据** — 表单设置 `--workers / --county-sleep / --no-townships / --reuse` 等参数，进度条显示当前省份，日志实时刷新；支持协作式取消（在省份完成后停止）。
+- **生成 SQL/CSV** — 下拉选版本与方言，点「生成」即可，完成后可一键打开输出目录。
+- **数据预览** — 树状浏览省 / 地 / 县 / 乡，展开县级时懒加载乡级，避免一次塞 38k+ 节点；支持按名称或 code 过滤。
+
+### 本地打包成 exe
+```bash
+pip install -r requirements.txt -r requirements-dev.txt
+pyinstaller packaging/xzqh-gui.spec --noconfirm
+```
+产物落在 `dist/xzqh-gui/`（onedir 模式，含 `xzqh-gui.exe` 与 `_internal/`）。
+
+### CI 自动构建（GitHub Actions）
+- 触发：push `v*` 标签 或 push `release/**` 分支（也可 workflow_dispatch 手动）
+- 产物：`xzqh-gui-windows-onedir` Artifact，30 天保留
+- 推 `v*` 标签时额外打 zip 并上传到 GitHub Release
 
 ---
 

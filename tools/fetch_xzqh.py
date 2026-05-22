@@ -464,8 +464,24 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def main() -> None:
-    args = parse_args()
+class FetchCancelled(Exception):
+    """Raised when the caller's should_cancel() returns True between provinces."""
+
+
+def run(
+    args: argparse.Namespace,
+    on_log=print,
+    on_progress=None,
+    should_cancel=None,
+) -> None:
+    """Execute the fetch pipeline with pluggable log / progress / cancel hooks.
+
+    - ``on_log(msg)``: receives each line that the CLI used to print().
+    - ``on_progress(done, total)``: called after each province completes (and
+      once before the loop with done=0); pass None to skip.
+    - ``should_cancel()``: polled between provinces; raise FetchCancelled if it
+      returns True.
+    """
     output_root = Path(args.output_dir)
     page_html = request_text(PUBLISH_PAGE, args.timeout)
     table_name = parse_table_name(page_html)
@@ -477,17 +493,22 @@ def main() -> None:
     all_rows: list[dict[str, str]] = []
     province_index = []
 
-    print(f"tableName: {table_name}")
+    on_log(f"tableName: {table_name}")
     if data_date:
-        print(f"dataDate: {data_date}")
-    print(f"provinceCount: {len(provinces)}")
+        on_log(f"dataDate: {data_date}")
+    on_log(f"provinceCount: {len(provinces)}")
+    if on_progress is not None:
+        on_progress(0, len(provinces))
 
     for index, province in enumerate(provinces, start=1):
+        if should_cancel is not None and should_cancel():
+            on_log("cancelled by user")
+            raise FetchCancelled()
         code = province["code"]
         name = province["name"]
         file_name = f"{safe_filename(code, name)}.json"
         json_path = province_dir / file_name
-        print(f"[{index:02d}/{len(provinces):02d}] fetching {code} {name}")
+        on_log(f"[{index:02d}/{len(provinces):02d}] fetching {code} {name}")
         tree = read_json(json_path) if args.reuse and json_path.exists() else fetch_province_tree(code, args.timeout)
         county_requests = 0
         if not args.no_townships and not has_township_data(tree):
@@ -512,6 +533,8 @@ def main() -> None:
                 "countyRequests": county_requests,
             }
         )
+        if on_progress is not None:
+            on_progress(index, len(provinces))
         if args.sleep > 0 and index < len(provinces):
             time.sleep(args.sleep)
 
@@ -538,8 +561,12 @@ def main() -> None:
             ("元数据", metadata, [18, 80]),
         ],
     )
-    print(f"saved: {version_dir}")
-    print(f"rows: {len(all_rows)}")
+    on_log(f"saved: {version_dir}")
+    on_log(f"rows: {len(all_rows)}")
+
+
+def main() -> None:
+    run(parse_args())
 
 
 if __name__ == "__main__":
