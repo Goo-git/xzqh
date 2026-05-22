@@ -1,0 +1,26 @@
+# Local Claude Code settings (per-user)
+.claude/
+
+# Microsoft Office temporary lock files
+~$*
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor swap/backup
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/
